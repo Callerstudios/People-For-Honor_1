@@ -16,7 +16,7 @@
   src: url(../Graphik_Font/GraphikMedium.otf);
 }
 .about_us p {
-  padding: 0 100px;
+  padding: 0 10%;
   font-size: 14px;
   font-family: Graphik_Normal;
   line-height: 30px;
