@@ -17,7 +17,7 @@
 }
 body{
     font-family: Graphik_Normal;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 .first_background {
@@ -197,6 +197,9 @@ marquee p{
     padding: 5px 0;
 }
 @media (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
   .nav_bar_normal {
     display: none;
   }
