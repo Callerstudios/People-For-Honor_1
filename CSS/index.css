@@ -17,7 +17,7 @@
 }
 body{
     font-family: Graphik_Normal;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 .first_background {
@@ -178,7 +178,7 @@ marquee p{
     font-style: italic;
 }
 .footer{
-    height: 250px;
+    height: 300px;
     padding: 50px 10%;
     background-color: #0b0c0f;
 }
