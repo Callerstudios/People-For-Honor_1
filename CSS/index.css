@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Graphik_Normal;
+  src: url(../Graphik_Font/GraphikRegular.otf);
+}
+@font-face {
+  font-family: Graphik_Bold;
+  src: url(../Graphik_Font/GraphikBold.otf);
+}
+@font-face {
+    font-family: Graphik_Medium;
+    src: url(../Graphik_Font/GraphikMedium.otf);
+}
+body{
+    font-family: Graphik_Normal;
+    width: 100%;
+    overflow-x: hidden;
+}
+.first_background {
+  height: 600px;
+  background-image: url(../IMAGES/empowering_lives.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.nav_bar {
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  /* background-color: #0b0c0f; */
+}
+.nav_bar_normal {
+  width: 100%;
+  height: 80px;
+  padding-right: 100px;
+}
+.nav_bar_normal ul {
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_bar_normal li {
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 1px;
+  display: inline-block;
+  list-style: none;
+}
+.nav_bar_normal li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav_bar_normal li a:hover {
+  color: gold;
+}
+.nav_bar_side {
+  position: absolute;
+  width: 200px;
+  height: 500px;
+  padding-top: 20px;
+  /* background-color: #0b0c0f; */
+  z-index: 100;
+  background-color: #0b0c0f;
+  top: 20px;
+  right: -200px;
+  transition: 0.3s;
+}
+.nav_bar_side li {
+  list-style: none;
+  padding: 10px 5px;
+  margin: 1px;
+}
+.nav_bar_side li a {
+  font-family: Graphik_Normal;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.nav_bar_side label{
+    width: 30px;
+    height: 25px;
+    /* background-color: red; */
+    transform: translateX(-35px);
+}
+.nav_bar label img{
+    width: 100%;
+    height: 100%;
+}
+.nav_bar #side_nav_bar_icon_checkbox{
+    display: none;
+}
+#side_nav_bar_icon_checkbox:checked + .nav_bar_side{
+    transform: translateX(-200px);
+}
+#side_nav_bar_icon_checkbox:checked + .nav_bar_side label:first-child {
+    display: none;
+}
+#side_nav_bar_icon_checkbox:not(:checked) + .nav_bar_side label:nth-child(2) {
+    display: none;
+}
+#side_nav_bar_icon_checkbox:checked + .nav_bar_side label img, #side_nav_bar_icon_checkbox:not(:checked) + .nav_bar_side label img{
+    animation: rotate_label 0.2s;
+}
+@keyframes rotate_label {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(180deg);
+    }
+}
+.main_logo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  width: 120px;
+  height: 120px;
+}
+.main_logo img{
+  width: 100%;
+  height: 1005;
+}
+.first_background .content{
+    /* background-color: red; */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first_background .content .text{
+    /* background-color: green; */
+    text-align: center;
+    width: 700px;
+    height: fit-content;
+    font-family: Graphik_Normal;
+}
+.first_background .content .text p{
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.first_background .content h1 {
+  color: white;
+  font-size: 60px;
+  font-family: Graphik_Medium;
+}
+.details{
+    padding: 0 10%;
+    margin-top: 50px;
+    /* background-color: green; */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+marquee p{
+    font-size: 30px;
+}
+.details > blockquote{
+    font-size: 24px;
+    font-style: italic;
+}
+.footer{
+    height: 250px;
+    padding: 50px 10%;
+    background-color: #0b0c0f;
+}
+.footer .social_media_icons img{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .footer .contacts{
+  /* background-color: red; */
+    /* padding: 20px 0; */
+    color: white;
+} 
+.footer .contacts p{
+    font-family: Graphik_Normal;
+    padding: 5px 0;
+}
+@media (max-width: 767px) {
+  .nav_bar_normal {
+    display: none;
+  }
+  .nav_bar_side {
+    display: flex;
+  }
+}

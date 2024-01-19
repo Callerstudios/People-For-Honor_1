@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Graphik_Normal;
+  src: url(../Graphik_Font/GraphikRegular.otf);
+}
+@font-face {
+  font-family: Graphik_Bold;
+  src: url(../Graphik_Font/GraphikBold.otf);
+}
+@font-face {
+  font-family: Graphik_Medium;
+  src: url(../Graphik_Font/GraphikMedium.otf);
+}
+.services{
+    padding: 50px 10%;
+}
+.services .service_one{
+    margin: 20px 0;
+}
+.services > h1{
+    text-align: center; 
+    font-size: 60px;
+    padding: 20px;
+    font-family: Graphik_Bold;
+}
+.services .service_one h1{
+    font-size: 30px;
+}
+.services .service_one p{
+    margin: 10px 0;
+  line-height: 22px;
+  font-size: 14px;
+}
+.services .service_one b{
+    color: #ffa200;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.services .service_one b:hover{
+    font-size: 20px;
+}
