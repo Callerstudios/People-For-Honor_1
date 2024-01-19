@@ -26,6 +26,10 @@
     font-size: 60px;
     padding: 20px;
     font-family: Graphik_Bold;
+    background-image: linear-gradient(to right, gold, black);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .services .service_one h1{
     font-size: 30px;

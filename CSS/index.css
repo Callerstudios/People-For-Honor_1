@@ -15,7 +15,7 @@
     font-family: Graphik_Medium;
     src: url(../Graphik_Font/GraphikMedium.otf);
 }
-body{
+html, body{
     font-family: Graphik_Normal;
     width: 100%;
     overflow-x: hidden;
@@ -108,7 +108,7 @@ body{
     display: none;
 }
 #side_nav_bar_icon_checkbox:checked + .nav_bar_side label img, #side_nav_bar_icon_checkbox:not(:checked) + .nav_bar_side label img{
-    animation: rotate_label 0.2s;
+    animation: rotate_label 0.7s;
 }
 @keyframes rotate_label {
     0%{
@@ -197,9 +197,6 @@ marquee p{
     padding: 5px 0;
 }
 @media (max-width: 767px) {
-  body{
-    overflow-x: hidden;
-  }
   .nav_bar_normal {
     display: none;
   }
